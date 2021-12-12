@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fr_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/fr_order"
+        android:icon="@drawable/ic_bonus"
+        android:title="@string/bonus"/>
+
+    <item
+        android:id="@+id/fr_explore"
+        android:icon="@drawable/ic_explore"
+        android:title="@string/eksplor"/>
+
+    <item
+        android:id="@+id/fr_bonus"
+        android:icon="@drawable/ic_order"
+        android:title="@string/order"/>
+
+    <item
+        android:id="@+id/fr_user"
+        android:icon="@drawable/ic_user"
+        android:title="@string/account"/>
+
+</menu>
