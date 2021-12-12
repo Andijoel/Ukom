@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.t42"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="31" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" >
+        <activity
+            android:name="com.example.t42.activity_explore"
+            android:exported="false" />
+        <activity
+            android:name="com.example.t42.activity_order"
+            android:exported="false" />
+        <activity
+            android:name="com.example.t42.activity_user"
+            android:exported="false" />
+        <activity
+            android:name="com.example.t42.activity_bonus"
+            android:exported="false" />
+        <activity
+            android:name="com.example.t42.Home"
+            android:exported="false" />
+        <activity
+            android:name="com.example.t42.Daftar"
+            android:exported="false" />
+        <activity
+            android:name="com.example.t42.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.t42.Login"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.t42.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>
